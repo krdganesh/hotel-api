@@ -1,0 +1,77 @@
+{
+  "name": "hotel-api",
+  "version": "1.0.0",
+  "description": "Hotel booking system backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ../src/index.js",
+    "start": "node ../src/index.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krdganesh/hotel-api.git"
+  },
+  "keywords": [
+    "koa2",
+    "es6",
+    "mongodb"
+  ],
+  "author": "Ganesh Karande <krd.ganesh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krdganesh/hotel-api/issues"
+  },
+  "homepage": "https://github.com/krdganesh/hotel-api#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.0",
+    "koa-morgan": "^1.0.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
+    "mongoose": "^4.12.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^4.0.0",
+    "jest": "^21.1.0",
+    "nodemon": "^1.18.3",
+    "supertest": "^3.1.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-flow-strip-types"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
